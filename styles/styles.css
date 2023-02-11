@@ -1,3 +1,5 @@
+/* Подключение шрифтов */
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -22,6 +24,8 @@
   font-display: swap;
 }
 
+/* Общие стили */
+
 body {
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
@@ -30,6 +34,10 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+
+/* Главная страница */
+
+/* Хедер */
 
 .page-header {
   background-color: #FFE17F;
@@ -55,6 +63,10 @@ body {
   font-weight: 800;
   text-transform: uppercase;
 }
+
+/* Мэйн */
+
+/* Мэйн - Слайдер */
 
 .item-slide-header {
   font-family: "Raleway", "Arial", sans-serif;
@@ -86,9 +98,26 @@ body {
   color: #444444;
 }
 
-.main-catalog-items img {
+/* Мэйн - Ссылки на каталог */
+
+.catalog-item-name {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-item-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
   background-color: #FFE17F;
 }
+
+/* Мэйн - Секция "Доставка", "Гарантия", "Кредит" */
 
 .additional-services-list {
   background-color: #F0F0F0;
@@ -142,6 +171,8 @@ body {
   text-transform: uppercase;
 }
 
+/* Мэйн - Секция "О нас" и "Контакты" */
+
 .about-us-text,
 .contacts,
 .contacts-address a {
@@ -155,17 +186,20 @@ body {
   line-height: 50px;
   color: #000000;
 }
+
 .transport-companies li {
   color: #FFC700;
 }
+
 .transport-companies .transport-company {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .about-us-more,
-.contacts-write-us{
+.contacts-write-us {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -176,7 +210,7 @@ body {
 }
 
 .contacts-shop-name,
-.contacts-subtitle{
+.contacts-subtitle {
   font-size: 24px;
   line-height: 30px;
 }
@@ -185,8 +219,10 @@ body {
   font-style: normal;
 }
 
+/* Мэйн - Секция с подпиской на рассылку */
+
 .newsletter {
-  background-color:  #F0F0F0;;
+  background-color: #F0F0F0;;
 }
 
 .newsletter-header {
@@ -217,6 +253,8 @@ body {
   color: #444444;
 }
 
+/* Футер */
+
 .page-footer {
   background-color: #444444;
   color: #FFFFFF;
@@ -243,6 +281,10 @@ body {
   color: #FFFFFF;
 }
 
+/* Каталог */
+
+/* Хедер */
+
 .navigation-account-username {
   color: #000000;
   text-decoration: none;
@@ -252,6 +294,8 @@ body {
   color: #000000;
   opacity: 0.3;
 }
+
+/* Мэйн */
 
 .main-header-title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -270,14 +314,6 @@ body {
 .catalog-filter,
 .sort-background-wrapper {
   background-color: #F0F0F0;
-}
-
-.catalog-item-name {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
 }
 
 .filter-sort {
@@ -356,7 +392,7 @@ body {
 }
 
 .pagination-back,
-.pagination-forward{
+.pagination-forward {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
