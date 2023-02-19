@@ -43,8 +43,13 @@ body {
   color: #000000;
 }
 
-.main-container {
-  flex-grow: 1;
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-header-container {
+
 }
 
 .visually-hidden {
@@ -66,9 +71,6 @@ body {
 
 .page-header {
   background-color: #FFE17F;
-}
-
-.page-header-container {
   width: 1040px;
   margin: 0 auto;
 }
@@ -80,10 +82,12 @@ body {
 .navigation-top-left {
   display: flex;
   width: 625px;
+  margin-right: auto;
 }
 
 .navigation-search {
   width: 520px;
+  margin-right: 25px;
 }
 
 .navigation-search input {
@@ -100,7 +104,6 @@ body {
 
 .navigation-account-login {
   width: 80px;
-  margin-left: 25px;
 }
 
 .navigation-list {
@@ -110,18 +113,17 @@ body {
 }
 
 .navigation-top-item {
-  margin-left: 35px;
+  margin-right: 35px;
 }
 
-.navigation-top-item:first-child {
-  margin-left: 0;
+.navigation-top-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-top-right {
   display: flex;
   justify-content: flex-end;
   width: 240px;
-  margin-left: auto;
 }
 
 .navigation-bot {
@@ -140,30 +142,22 @@ body {
 
 .header-catalog-open-button {
   width: 295px;
-  margin: 0;
   padding: 0;
   border: 0;
+  margin: 0 auto 0 0;
 }
 
 .navigation-info {
   display: flex;
-  width: 470px;
-  margin-left: auto;
-}
-
-.navigation-info-item {
-  margin-left: 45px;
-}
-
-.navigation-info-item:first-child {
-  margin-left: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 475px;
 }
 
 /* Мэйн */
 
-.main-index-container {
-  width: 1160px;
-  margin: 0 auto;
+.main-index {
+  flex-grow: 1;
 }
 
 /* Мэйн - Слайдер */
@@ -199,21 +193,27 @@ body {
 }
 
 .item-slide-features {
-  width: 305px;
-}
-
-.item-slide-features td {
-  padding: 0;
+  width: 315px;
 }
 
 .item-slide-features-numbers {
   font-size: 36px;
   line-height: 30px;
+  padding: 0;
+}
+
+.item-slide-features-numbers:last-child {
+  padding-left: 20px;
 }
 
 .item-slide-features-text {
   font-size: 16px;
   color: #444444;
+  padding: 0;
+}
+
+.item-slide-features-text:last-child {
+  padding-left: 20px;
 }
 
 .slider-pagination {
@@ -224,11 +224,11 @@ body {
 }
 
 .slider-pagination-item {
-  margin-left: 25px;
+  margin-right: 25px;
 }
 
-.slider-pagination-item:first-child {
-  margin-left: 0;
+.slider-pagination-item:last-child {
+  margin-right: 0;
 }
 
 /* Мэйн - Ссылки на каталог */
@@ -240,9 +240,10 @@ body {
 
 .main-catalog-items {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0 0 0 -40px;
 }
 
 .catalog-item {
@@ -250,8 +251,8 @@ body {
   margin-left: 40px;
 }
 
-.catalog-item:first-child {
-  margin-left: 0;
+.catalog-item:last-child {
+  margin-right: 0;
 }
 
 .catalog-item-name {
@@ -313,12 +314,9 @@ body {
   display: flex;
 }
 
-.additional-services-info-wrapper img {
-  margin-left: 105px;
-}
-
 .additional-services-info {
   width: 452px;
+  margin-right: 105px;
 }
 
 .delivery {
@@ -340,6 +338,8 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
 }
 
 .delivery-truck-background {
@@ -496,11 +496,6 @@ body {
 
 /* Футер */
 
-.footer-container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .page-footer {
   background-color: #444444;
   color: #FFFFFF;
@@ -521,8 +516,9 @@ body {
 
 .footer-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 445px;
+  width: 455px;
   margin: 0;
   padding: 0;
 }
@@ -534,11 +530,11 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-left: 35px;
+  margin-right: 35px;
 }
 
-.footer-navigation-item:first-child {
-  margin-left: 0;
+.footer-navigation-item:last-child {
+  margin-right: 0;
 }
 
 .footer-contacts-tel {
@@ -563,9 +559,19 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 150px;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-item {
+  margin-right: 15px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 /* Каталог */
@@ -585,11 +591,11 @@ body {
 .navigation-account-username {
   color: #000000;
   text-decoration: none;
+  margin-right: 30px;
 }
 
 .navigation-account-logout {
   width: 55px;
-  margin-left: 30px;
 }
 
 .navigation-account-logout span {
@@ -615,11 +621,11 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-left: 35px;
+  margin-right: 35px;
 }
 
-.breadcrumbs-item:first-child {
-  margin-left: 0;
+.breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {

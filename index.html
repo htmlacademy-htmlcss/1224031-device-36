@@ -9,45 +9,43 @@
 
 <body>
 <header class="page-header">
-  <div class="page-header-container">
-    <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип">
-    <nav class="navigation-top">
-      <div class="navigation-top-left">
-        <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru/">
-          <input class="navigation-search-field" type="text" name="search" placeholder="Поиск по сайту">
-          <input class="navigation-search-submit" type="submit" value="Найти">
-        </form>
-        <a class="navigation-account-login" href="#">Войти</a>
-      </div>
-      <ul class="navigation-list navigation-top-right">
-        <li class="navigation-item navigation-top-item">
-          <a class="navigation-link">Сравнить</a>
-        </li>
-        <li class="navigation-item navigation-top-item">
-          <a class="navigation-link">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="navigation-bot">
-      <button class="header-catalog-open-button">Каталог товаров</button>
-      <ul class="navigation-list navigation-info">
-        <li class="navigation-item navigation-info-item">
-          <a class="navigation-link">Доставка</a>
-        </li>
-        <li class="navigation-item navigation-info-item">
-          <a class="navigation-link">Гарантия</a>
-        </li>
-        <li class="navigation-item navigation-info-item">
-          <a class="navigation-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип">
+  <nav class="navigation-top">
+    <div class="navigation-top-left">
+      <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru/">
+        <input class="navigation-search-field" type="text" name="search" placeholder="Поиск по сайту">
+        <input class="navigation-search-submit" type="submit" value="Найти">
+      </form>
+      <a class="navigation-account-login" href="#">Войти</a>
+    </div>
+    <ul class="navigation-list navigation-top-right">
+      <li class="navigation-item navigation-top-item">
+        <a class="navigation-link" href="#">Сравнить</a>
+      </li>
+      <li class="navigation-item navigation-top-item">
+        <a class="navigation-link" href="#">Корзина</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="navigation-bot">
+    <button class="header-catalog-open-button">Каталог товаров</button>
+    <ul class="navigation-list navigation-info">
+      <li class="navigation-item navigation-info-item">
+        <a class="navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="navigation-item navigation-info-item">
+        <a class="navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="navigation-item navigation-info-item">
+        <a class="navigation-link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-<main class="main-container main-index">
+<main class="main-index">
   <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
   <section class="item-slider">
-    <div class="main-index-container">
+    <div class="container">
       <div class="item-slider-flex-wrapper">
         <h2 class="visually-hidden">Слайдер товаров</h2>
         <div class="item-slider-left">
@@ -143,7 +141,7 @@
     </ul>
   </section>
   <section class="additional-services-list">
-    <div class="main-index-container">
+    <div class="container">
       <div class="additional-services-flex-wrapper">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
         <div class="additional-services-buttons">
@@ -161,7 +159,7 @@
           <div class="additional-services-info">
             <h3 class="delivery">Доставка</h3>
             <p class="delivery-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+              Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
               этаж.
             </p>
@@ -171,14 +169,14 @@
         <div>
         </div>
       </div>
-      <div class="rare-item-delivery">
-        <div class="delivery-truck-background">
-          <img src="images/delivery-truck-icon.svg" width="47" height="31" alt="Стилизованная иконка грузовика">
-        </div>
-        <p class="item-under-the-order">Доставим редкий товар под заказ</p>
-        <img src="images/info.svg" width="40" height="40" alt="">
-      </div>
     </div>
+  </section>
+  <section class="rare-item-delivery">
+    <div class="delivery-truck-background">
+      <img src="images/delivery-truck-icon.svg" width="47" height="31" alt="Стилизованная иконка грузовика">
+    </div>
+    <p class="item-under-the-order">Доставим редкий товар под заказ</p>
+    <img src="images/info.svg" width="40" height="40" alt="">
   </section>
   <div class="about-us-contacts-wrapper">
     <section class="about-us">
@@ -224,7 +222,7 @@
     </section>
   </div>
   <section class="newsletter">
-    <div class="main-index-container">
+    <div class="container">
       <div class="newsletter-top">
         <h2 class="newsletter-header">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
@@ -243,7 +241,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="footer-container">
+  <div class="container">
     <img class="footer-contacts-logo" src="images/footer-logo.svg" width="145" height="36" alt="Логотип">
     <div class="footer-flex-wrapper">
       <div class="footer-address">
