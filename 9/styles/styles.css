@@ -117,7 +117,32 @@ body {
 }
 
 .navigation-account-login {
+  position: relative;
   width: 80px;
+}
+
+.navigation-account-login::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -26px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../images/user-account.svg");
+}
+
+.navigation-compare {
+  position: relative;
+}
+
+.navigation-compare::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/compare-button.svg");
+  width: 10px;
+  height: 12px;
+  top: 5px;
+  left: -24px;
 }
 
 .navigation-link {
@@ -196,7 +221,7 @@ body {
 
 .item-slider-flex-wrapper {
   display: flex;
-  margin-top: -150px;
+  margin-top: -210px;
 }
 
 .item-slider-left {
@@ -310,7 +335,7 @@ body {
 /* Мэйн - Ссылки на каталог */
 
 .main-catalog {
-  width: 1080px;
+  width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
 }
@@ -366,6 +391,7 @@ body {
 
 .additional-services-buttons {
   margin-right: 115px;
+  border-right: 7px solid #000000;
 }
 
 .additional-services-button {
@@ -638,8 +664,19 @@ body {
 }
 
 .newsletter-free {
+  position: relative;
   color: #444444;
   margin: 0;
+}
+
+.newsletter-free::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -30px;
+  background-image: url("../images/submit-check-mark.svg");
+  width: 14px;
+  height: 14px;
 }
 
 /* Футер */
@@ -805,7 +842,8 @@ body {
 }
 
 .catalog-products-width-wrapper {
-  width: 800px;
+  width: 840px;
+  background-color: #FFFFFF;
 }
 
 .catalog-products,
@@ -910,6 +948,7 @@ body {
 
 .catalog-button-background-wrapper {
   background-color: #FFFFFF;
+  width: 760px;
 }
 
 .load-more-products {
@@ -920,8 +959,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid #E5E5E5;
-  padding: 18px 295px;
-  margin-left: 40px;
+  padding: 18px 0;
+  width: 100%;
   margin-bottom: 44px;
   background-color: #FFFFFF;
 }
