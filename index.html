@@ -21,10 +21,10 @@
       </div>
       <ul class="navigation-list navigation-top-right">
         <li class="navigation-item navigation-top-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+          <a class="navigation-link navigation-compare" href="#">Сравнить</a>
         </li>
         <li class="navigation-item navigation-top-item">
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="navigation-link navigation-cart" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -82,17 +82,23 @@
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">1 фото</span>
+            <div class="slider-pagination-button-circle slider-pagination-button-active">
+              <span class="visually-hidden">1 фото</span>
+            </div>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">2 фото</span>
+            <div class="slider-pagination-button-circle">
+              <span class="visually-hidden">2 фото</span>
+            </div>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">3 фото</span>
+            <div class="slider-pagination-button-circle">
+              <span class="visually-hidden">3 фото</span>
+            </div>
           </button>
         </li>
       </ol>
@@ -148,15 +154,17 @@
       <div class="additional-services-flex-wrapper">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
         <div class="additional-services-buttons">
-          <button class="additional-services-button additional-services-active-button" type="button">
-            Доставка
-          </button>
-          <button class="additional-services-button additional-services-nonactive-button" type="button">
-            Гарантия
-          </button>
-          <button class="additional-services-button additional-services-nonactive-button" type="button">
-            Кредит
-          </button>
+          <div class="additional-services-buttons-wrapper">
+            <button class="additional-services-button additional-services-active-button" type="button">
+              Доставка
+            </button>
+            <button class="additional-services-button additional-services-nonactive-button" type="button">
+              Гарантия
+            </button>
+            <button class="additional-services-button additional-services-nonactive-button" type="button">
+              Кредит
+            </button>
+          </div>
         </div>
         <div class="additional-services-info-wrapper">
           <div class="additional-services-info">
@@ -167,9 +175,8 @@
               этаж.
             </p>
           </div>
-          <img src="images/delivery-icon.svg" width="136" height="164" alt="Стилизованная иконка курьера">
-        </div>
-        <div>
+          <img class="additional-services-delivery-icon" src="images/delivery-icon.svg" width="136" height="164"
+               alt="Стилизованная иконка курьера">
         </div>
       </div>
     </div>
@@ -235,7 +242,7 @@
       </div>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="newsletter-input-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">
+        <button class="newsletter-button" type="submit">
           Подписаться
         </button>
         <p class="newsletter-free">Это бесплатно</p>
