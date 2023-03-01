@@ -20,10 +20,10 @@
           <input class="navigation-search-submit" type="submit" value="Найти">
         </form>
         <div class="catalog-navigation-account">
-          <a class="navigation-account-username" href="#">
+          <a class="navigation-account-username navigation-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none">
-              <path fill="#000"
-                    d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/>
+              <path
+                d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/>
             </svg>
             Коля Петухов
           </a>
@@ -34,7 +34,7 @@
         <li class="navigation-item navigation-top-item">
           <a class="navigation-link navigation-compare" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none">
-              <path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/>
+              <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/>
             </svg>
             Сравнить
           </a>
@@ -44,7 +44,7 @@
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
-                fill="black"/>
+              />
             </svg>
             Корзина
           </a>
@@ -146,7 +146,7 @@
             </ul>
           </fieldset>
           <button class="button catalog-filter-button" type="submit">Показать</button>
-        </form>`
+        </form>
         <div class="catalog-products-width-wrapper">
           <div class="sort-wrapper">
             <p class="filter-sort sort">Сортировка:</p>
@@ -157,10 +157,30 @@
             </select>
             <div class="sort-buttons">
               <button class="sort-button" type="button">
-                <img src="images/sort-up-button.svg" width="11" height="10" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                  <g clip-path="url(#a)">
+                    <path d="m6 0 5.5 10H.5"/>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M.5 0h11v10H.5z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Сортировка по убыванию</span>
               </button>
               <button class="sort-button" type="button">
-                <img src="images/sort-down.svg" width="11" height="10" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="none">
+                  <g clip-path="url(#a)">
+                    <path d="M6 10 .5 0h11"/>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M11.5 10H.5V0h11z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden">Сортировка по возрастанию</span>
               </button>
             </div>
           </div>
@@ -252,9 +272,15 @@
       </div>
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
-          <li class="footer-navigation-item">Доставка</li>
-          <li class="footer-navigation-item">Гарантия</li>
-          <li class="footer-navigation-item">Контакты</li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-navigation-item">
+            <a class="footer-navigation-link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <div class="footer-contacts-tel">
@@ -266,55 +292,51 @@
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-item-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/>
-                <g clip-path="url(#a)">
-                  <path fill="#444"
-                        d="m25.44 14.07-11.82 4.56c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"/>
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M13 14h14v12H13z"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="visually-hidden">Телеграм</span>
+            <a class="social-item-link" href="https://web.telegram.org/" target="_blank">
+              <div class="social-item-focus-wrapper">
+                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.4431 0.0735832L0.623071 4.63158C-0.183596 4.95558 -0.178929 5.40558 0.475071 5.60625L3.50974 6.55292L10.5311 2.12292C10.8631 1.92092 11.1664 2.02958 10.9171 2.25092L5.2284 7.38492H5.22707L5.2284 7.38558L5.01907 10.5136C5.32574 10.5136 5.46107 10.3729 5.63307 10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583 12.9824 -0.170417 12.4431 0.0735832Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Телеграм</span>
+              </div>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-item-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/>
-                <g clip-path="url(#a)">
-                  <path fill="#444"
-                        d="M27.67 16.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C25.01 15 20 15 20 15a51.1 51.1 0 0 0-6.26.32c-.34.09-.64.26-.9.5-.24.24-.42.53-.51.85a19.4 19.4 0 0 0-.33 3.67c0 1.22.1 2.45.33 3.66.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68Zm-9.27 5.95v-4.57l4.18 2.29-4.18 2.28Z"/>
-                </g>
-                <defs>
-                  <clipPath id="a">
-                    <path fill="#fff" d="M12 15h16v11H12z"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="visually-hidden">Ютуб</span>
+            <a class="social-item-link" href="https://www.youtube.com/" target="_blank">
+              <div class="social-item-focus-wrapper">
+                <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.6671 1.67464C15.5765 1.35146 15.4 1.05887 15.1564 0.827973C14.9059 0.589975 14.5989 0.41973 14.2644 0.333306C13.0124 0.00330585 7.99641 0.00330593 7.99641 0.00330593C5.9053 -0.0204856 3.8147 0.0841556 1.73641 0.316639C1.40187 0.409448 1.09545 0.583497 0.844411 0.823306C0.597745 1.06064 0.419078 1.35331 0.325745 1.67397C0.10154 2.8818 -0.00739387 4.1082 0.000411455 5.33664C-0.00758854 6.56397 0.101078 7.78997 0.325745 8.99931C0.417078 9.31864 0.595078 9.60997 0.842411 9.84531C1.08974 10.0806 1.39774 10.2506 1.73641 10.3406C3.00508 10.67 7.99641 10.67 7.99641 10.67C10.0902 10.6938 12.1835 10.5892 14.2644 10.3566C14.5989 10.2702 14.9059 10.1 15.1564 9.86197C15.3999 9.63112 15.5762 9.33849 15.6664 9.01531C15.8965 7.80794 16.0083 6.58103 16.0004 5.35197C16.0177 4.11771 15.906 2.88502 15.6671 1.67397V1.67464ZM6.40174 7.61931V3.05464L10.5751 5.33731L6.40174 7.61931Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Ютуб</span>
+              </div>
             </a>
+
           </li>
           <li class="footer-social-item">
-            <a class="social-item-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
-                <circle cx="20" cy="20" r="20" fill="#fff" fill-opacity=".3"/>
-                <path fill="#444"
-                      d="M22.7 13.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/>
-              </svg>
-              <span class="visually-hidden">Твиттер</span>
+            <a class="social-item-link" href="https://www.twitter.com/" target="_blank">
+              <div class="social-item-focus-wrapper">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.3467 0.154515C11.9467 -0.34346 13.12 0.4533 13.76 1.25006C14.2933 1.05087 14.9333 0.85168 15.5733 0.65249C15.5733 1.44925 15.04 2.04682 14.72 2.24601C15.4667 2.4452 16 1.84763 16 1.84763C15.8933 2.74398 15.04 3.54074 14.5067 3.73993C14.2933 10.0144 11.52 14.0978 5.01333 13.9982C4.48 13.9982 5.12 13.9982 4.58667 13.9982C4.26667 13.9982 0.64 13.5998 0 12.2055C2.13333 12.4047 3.62667 11.8071 4.37333 11.11C3.52 10.8112 1.81333 10.7116 1.6 8.3213C1.92 8.52049 2.13333 8.62009 2.77333 8.52049C1.6 7.72373 0.32 7.02657 0.426667 5.03467C0.746667 5.33345 1.38667 5.53264 1.70667 5.43305C1.06667 5.23386 -0.213333 2.3456 0.853333 0.85168C2.56 2.54479 4.37333 4.23791 7.57333 4.3375C7.78667 2.24601 8.64 0.85168 10.3467 0.154515Z"
+                  />
+                </svg>
+                <span class="visually-hidden">Твиттер</span>
+              </div>
             </a>
           </li>
         </ul>
       </div>
       <p class="about-text">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/htmlacademy.svg" width="115"
-                                                                        height="33"
-                                                                        alt=""></a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="none">
+            <path
+              d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+          </svg>
+        </a>
       </p>
     </div>
   </div>
