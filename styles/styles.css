@@ -205,7 +205,6 @@ body {
 
 .navigation-account-login {
   position: relative;
-  width: 80px;
 }
 
 .navigation-account-login svg {
@@ -494,7 +493,7 @@ body {
   width: 50px;
   height: 50px;
   top: -15px;
-  left: 245px;
+  left: 243px;
 }
 
 .header-catalog-items {
@@ -1254,14 +1253,15 @@ body {
 }
 
 .footer-navigation {
-  margin-right: 172px;
+  margin-right: auto;
+  max-width: 460px;
 }
 
 .footer-navigation-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  min-width: 455px;
+  min-width: 480px;
   margin: 0;
   padding: 0;
 }
@@ -1300,7 +1300,6 @@ body {
 }
 
 .footer-contacts-tel {
-  width: 180px;
   text-decoration: underline;
 }
 
@@ -1336,20 +1335,18 @@ body {
 .footer-decorative-underline {
   width: 80px;
   border-bottom: 7px solid #FFC700;
-  margin-right: 425px;
 }
 
 .footer-social {
-  margin-right: 390px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-social-list {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  justify-content: space-between;
-  margin: 0;
   padding: 0;
+  margin: 0 0 0 35px;
 }
 
 .footer-social-item {
