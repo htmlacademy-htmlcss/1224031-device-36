@@ -98,6 +98,10 @@ body {
   display: none;
 }
 
+.button:disabled {
+  opacity: 0.3;
+}
+
 /* Главная страница */
 
 /* Хедер */
@@ -176,6 +180,10 @@ body {
   opacity: 0.3;
 }
 
+.navigation-search-field:disabled {
+  opacity: 0.3;
+}
+
 .navigation-search-submit {
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
@@ -201,6 +209,10 @@ body {
 
 .navigation-search-submit:focus {
   outline: 2px solid #AF4FFF;
+}
+
+.navigation-search-submit:disabled {
+  opacity: 0.3;
 }
 
 .navigation-account-login {
@@ -515,9 +527,16 @@ body {
 
 .navigation-info {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 470px;
+  min-width: 470px;
+}
+
+.navigation-item {
+  margin-right: 40px;
+}
+
+.navigation-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Мэйн */
@@ -528,10 +547,15 @@ body {
 
 /* Мэйн - Слайдер */
 
+.item-slider {
+  position: relative;
+}
+
 .item-slider-flex-wrapper {
   display: flex;
   margin-top: -210px;
   position: relative;
+  margin-bottom: 70px;
 }
 
 .nonactive-item-slide {
@@ -571,6 +595,10 @@ body {
 
 .item-slide-button:focus svg {
   outline: 2px solid #AF4FFF;
+}
+
+.item-slide-button:disabled {
+  opacity: 0.1;
 }
 
 .item-slide-to-left {
@@ -649,11 +677,12 @@ body {
 }
 
 .slider-pagination {
+  position: absolute;
   display: flex;
   padding: 0;
-  width: 75px;
-  margin: -22px auto 61px;
   list-style: none;
+  left: 913px;
+  top: 514px;
 }
 
 .slider-pagination-item {
@@ -666,27 +695,22 @@ body {
 
 .slider-pagination-button {
   background: transparent;
-  padding: 0;
-  border: none;
+  padding: 4px;
   cursor: pointer;
-}
-
-.slider-pagination-button-circle {
-  width: 7px;
-  height: 7px;
   border: 2px solid #000000;
   border-radius: 50%;
+  z-index: 1;
 }
 
-.slider-pagination-button-circle:hover {
+.slider-pagination-button:hover {
   opacity: 0.6;
 }
 
-.slider-pagination-button-circle:active {
+.slider-pagination-button:active {
   opacity: 0.3;
 }
 
-.slider-pagination-button:focus {
+.slider-pagination:focus {
   outline: 2px solid #AF4FFF;
 }
 
@@ -1163,6 +1187,14 @@ body {
   opacity: 0.5;
 }
 
+.newsletter-input-field:invalid {
+  border-bottom: 3px solid #FF3D3D;
+}
+
+.newsletter-input-field:disabled {
+  opacity: 0.1;
+}
+
 .newsletter-button {
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 800;
@@ -1190,6 +1222,10 @@ body {
 
 .newsletter-button:focus {
   outline: 2px solid #AF4FFF;
+}
+
+.newsletter-button:disabled {
+  opacity: 0.1;
 }
 
 .newsletter-free {
@@ -1700,16 +1736,20 @@ body {
 
 .sort-control:hover {
   color: rgba(0, 0, 0, 0.6);
-  background: url("../images/open-sort-list-hover.svg") no-repeat right;
+  background: url("../images/open-sort-list-hover.svg") no-repeat 111px 15px;
 }
 
 .sort-control:active {
   color: rgba(0, 0, 0, 0.3);
-  background: url("../images/open-sort-list-active.svg") no-repeat right;
+  background: url("../images/open-sort-list-active.svg") no-repeat 111px 15px;
 }
 
 .sort-control:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.sort-control:disabled {
+  opacity: 0.1;
 }
 
 .catalog-filter-group {
@@ -2039,6 +2079,7 @@ body {
 }
 
 .modal-flex-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -2073,9 +2114,9 @@ body {
   outline-offset: -2px;
 }
 
-/*.field:invalid {
-  outline: 2px solid #FF3D3D;
-}*/
+.field:disabled {
+  opacity: 0.1;
+}
 
 .delivery-form-field {
   background-image: url("../images/name-field-icon.svg");
@@ -2106,6 +2147,7 @@ body {
 }
 
 .delivery-counter-button {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2114,6 +2156,10 @@ body {
   padding: 0;
   border: none;
   cursor: pointer;
+}
+
+.delivery-counter-button:last-child {
+  left: 130px;
 }
 
 .delivery-counter-button svg {
@@ -2138,14 +2184,17 @@ body {
 
 .delivery-counter-button:focus {
   outline: 2px solid #AF4FFF;
-  outline-offset: -2px;
+}
+
+.delivery-counter-button:disabled {
+  opacity: 0.1;
 }
 
 .delivery-count {
   text-align: center;
   padding: 0;
   border: none;
-  width: 60px;
+  width: 190px;
   height: 60px;
   background-color: #F0F0F0;
 }
@@ -2158,7 +2207,7 @@ body {
 
 .delivery-count:invalid {
   outline: 2px solid #FF3D3D;
-  outline-offset: -2px;
+  outline-offset: 1px;
 }
 
 .modal-submit {
@@ -2194,7 +2243,7 @@ body {
 .tooltip-button {
   position: absolute;
   top: -3px;
-  right: 35px;
+  right: 46px;
   border: none;
   background-color: transparent;
   padding: 0;
