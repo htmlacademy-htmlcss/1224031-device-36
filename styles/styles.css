@@ -683,6 +683,7 @@ body {
   list-style: none;
   left: 913px;
   top: 514px;
+  z-index: 1;
 }
 
 .slider-pagination-item {
@@ -699,7 +700,6 @@ body {
   cursor: pointer;
   border: 2px solid #000000;
   border-radius: 50%;
-  z-index: 1;
 }
 
 .slider-pagination-button:hover {
@@ -1853,6 +1853,15 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
+.control-input:disabled + .control-input-text {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.control-input:disabled + .control-input-text::before {
+  border-color: #CCCCCC;
+}
+
 .catalog-filter-button {
   position: relative;
   font-family: "Raleway", "Arial", sans-serif;
@@ -2115,7 +2124,7 @@ body {
 }
 
 .field:disabled {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .delivery-form-field {
@@ -2236,10 +2245,6 @@ body {
   z-index: -1;
 }
 
-.tooltip {
-
-}
-
 .tooltip-button {
   position: absolute;
   top: -3px;
@@ -2267,6 +2272,7 @@ body {
   width: 170px;
   margin-top: 10px;
   margin-left: -16px;
+  z-index: 1;
 }
 
 .tooltip-text:before {
