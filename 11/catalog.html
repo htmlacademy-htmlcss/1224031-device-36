@@ -32,7 +32,7 @@
         </div>
       </div>
       <ul class="navigation-list navigation-top-right">
-        <li class="navigation-item navigation-top-item">
+        <li class="navigation-top-item">
           <a class="navigation-link navigation-compare" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none">
               <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/>
@@ -40,7 +40,7 @@
             Сравнить
           </a>
         </li>
-        <li class="navigation-item navigation-top-item">
+        <li class="navigation-top-item">
           <a class="navigation-link navigation-cart" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -92,27 +92,33 @@
     <nav class="navigation-bot">
       <div class="header-catalog">
         <button class="header-catalog-open-button">Каталог товаров</button>
-        <div class="header-catalog-width-wrapper header-catalog-nonactive">
-          <ul class="header-catalog-items">
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Виртуальная реальность</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Моноподы для cелфи</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Экшн-камеры</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Фитнес-браслеты</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Умные часы</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Квадрокоптеры</a>
-            </li>
-          </ul>
+        <div class="header-catalog-width-wrapper">
+          <div class="header-catalog-grid-wrapper">
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <ul class="navigation-list navigation-info">
@@ -308,6 +314,7 @@
           </ul>
           <button class="load-more-products">Загрузить ещё</button>
           <div class="pagination-background-wrapper">
+            <div class="pagination-container">
             <ul class="pagination ">
               <li class="pagination-item">
                 <a class="pagination-link pagination-back" href="#">Назад</a>
@@ -331,6 +338,7 @@
                 <a class="pagination-link pagination-forward" href="#">Вперёд</a>
               </li>
             </ul>
+            </div>
           </div>
         </div>
       </div>

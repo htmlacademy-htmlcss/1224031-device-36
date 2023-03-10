@@ -29,7 +29,7 @@
         </a>
       </div>
       <ul class="navigation-list navigation-top-right">
-        <li class="navigation-item navigation-top-item">
+        <li class="navigation-top-item">
           <a class="navigation-link navigation-compare" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none">
               <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/>
@@ -37,7 +37,7 @@
             Сравнить
           </a>
         </li>
-        <li class="navigation-item navigation-top-item">
+        <li class="navigation-top-item">
           <a class="navigation-link navigation-cart" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -89,26 +89,32 @@
       <div class="header-catalog">
         <button class="header-catalog-open-button">Каталог товаров</button>
         <div class="header-catalog-width-wrapper">
+          <div class="header-catalog-grid-wrapper">
           <ul class="header-catalog-items">
             <li class="header-catalog-item">
-              <a class="header-catalog-link">Виртуальная реальность</a>
+              <a class="header-catalog-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="header-catalog-item">
-              <a class="header-catalog-link">Моноподы для cелфи</a>
+              <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
             </li>
             <li class="header-catalog-item">
-              <a class="header-catalog-link">Экшн-камеры</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Фитнес-браслеты</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Умные часы</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link">Квадрокоптеры</a>
+              <a class="header-catalog-link" href="#">Экшн-камеры</a>
             </li>
           </ul>
+          <ul class="header-catalog-items">
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="header-catalog-items">
+            <li class="header-catalog-item">
+              <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+          </div>
         </div>
       </div>
       <ul class="navigation-list navigation-info">
@@ -552,13 +558,15 @@
         <div class="modal-flex-wrapper">
           <div class="field-group">
             <label class="modal-label" for="user-name">Ваше имя:</label>
-            <input class="delivery-form-field field" type="text" id="user-name" name="user-name"
+            <input class="delivery-name-form-field field" type="text" id="user-name" name="user-name"
                    placeholder="Введите имя" required>
+            <span class="form-field-bot-text username-field-bot-text">Добавьте имя</span>
           </div>
           <div class="field-group">
             <label class="modal-label" for="delivery-email">Ваш e-mail:</label>
             <input class="delivery-email-field field" type="email" id="delivery-email" name="delivery-email"
                    placeholder="Введите e-mail" required>
+            <span class="form-field-bot-text email-field-bot-text">Забавный у вас адрес</span>
           </div>
         </div>
         <div class="modal-flex-wrapper">
