@@ -493,12 +493,13 @@ body {
 .header-catalog-open-button {
   position: relative;
   display: flex;
+  text-align: start;
   width: 295px;
   margin: 0 auto 0 0;
-  padding: 0;
   border: none;
   cursor: pointer;
   background-color: #FFE17F;
+  padding: 0 60px 0 0;
 }
 
 .header-catalog-open-button:focus {
