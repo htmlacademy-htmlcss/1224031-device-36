@@ -1956,7 +1956,9 @@ body {
   text-decoration: none;
 }
 
-.product-card-link:hover .product-card-image{
+.product-card-link:hover .product-card-image,
+.product-card-link:hover .product-card-new
+{
   opacity: 0.3;
 }
 
@@ -2038,6 +2040,12 @@ body {
   z-index: -1;
 }
 
+.product-card-new {
+  display: none;
+  position: absolute;
+  right: 27px;
+  top: 27px;
+}
 
 .catalog-button-background-wrapper {
   background-color: #FFFFFF;
