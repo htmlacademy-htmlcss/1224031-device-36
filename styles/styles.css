@@ -292,7 +292,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 20px 18px 24px 20px;
 }
 
 .cart-item:last-child {
@@ -335,11 +335,13 @@ body {
 }
 
 .cart-item-delete {
+  display: inline-block;
   background: transparent;
   border: none;
   cursor: pointer;
   width: 10px;
   height: 10px;
+  padding: 0 0 13px;
 }
 
 .cart-item-delete svg {
@@ -354,14 +356,15 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.cart-item-delete:focus svg {
+.cart-item-delete:focus {
   outline: 2px solid #AF4FFF;
+  outline-offset: 1px;
 }
 
 .cart-items-summary {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 18px 0 22px;
   min-height: 45px;
   background-color: #1A1A1A;
 }
@@ -374,7 +377,7 @@ body {
 
 .open-cart-button-background {
   background-color: #000000;
-  padding: 20px;
+  padding: 18px;
 }
 
 .open-cart-button {
@@ -386,7 +389,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  padding: 15px 20px;
+  padding: 15px 24px 15px 26px;
   color: #000000;
   cursor: pointer;
   text-decoration: none;
@@ -469,7 +472,7 @@ body {
   z-index: 2;
   left: -60px;
   top: 40px;
-  min-height: 170px;
+  min-height: 156px;
   background-color: #FFE17F;
 }
 
@@ -520,19 +523,24 @@ body {
 
 .header-catalog-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 232px);
   grid-template-rows: 1fr;
-  margin-top: 10px;
+  margin-top: 3px;
+  margin-left: 60px;
 }
 
 .header-catalog-items {
   margin: 0;
-  padding: 0 0 0 60px;
+  padding: 0;
   list-style: none;
 }
 
+.header-catalog-items:nth-child(2) {
+  padding-left: 20px;
+}
+
 .header-catalog-item {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .header-catalog-link {
@@ -818,7 +826,7 @@ body {
 
 .additional-services-list {
   background-color: #F0F0F0;
-  margin: 0 0 65px;
+  margin: 0 0 70px;
 }
 
 .additional-services-buttons {
@@ -885,6 +893,12 @@ body {
   padding: 10px 0 10px 17px;
 }
 
+.additional-services-active-button:hover,
+.additional-services-active-button:active
+{
+  padding-left: 50px;
+}
+
 .additional-services-active-button:focus {
   outline: 2px solid #AF4FFF;
   outline-offset: -2px;
@@ -934,7 +948,6 @@ body {
   padding: 0;
   width: 1160px;
   cursor: pointer;
-  padding-top: 5px;
 }
 
 .delivery-truck-background {
@@ -967,7 +980,7 @@ body {
 }
 
 .rare-item-delivery-button:hover .delivery-truck-background {
-  background-color: #FFC700;;
+  background-color: #FFC700;
 }
 
 .rare-item-delivery-button:hover .info-logo svg {
@@ -1936,9 +1949,37 @@ body {
 }
 
 .product-card-link {
+  display: block;
+  position: relative;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.product-card-link:hover .product-card-image,
+.product-card-link:hover .product-card-new
+{
+  opacity: 0.3;
+}
+
+.product-card-link:hover .product-card-title{
+  opacity: 0.6;
+}
+
+.product-card-link:hover .product-card-button {
+  display: block;
+}
+
+.product-card-link:active .product-card-name-price{
+  opacity: 0.3;
+}
+
+.product-card-link:active .product-card-button::before {
+  background-color: #FFC700;
+}
+
+.product-card-link:focus{
+  outline: 2px solid #AF4FFF;
 }
 
 .product-card-image {
@@ -1965,7 +2006,45 @@ body {
 .product-card-price {
   margin-top: -20px;
   color: #444444;
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+.product-card-button {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 75px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: transparent;
+  z-index: 1;
+  padding-left: 37px;
+  padding-right: 37px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #FFE17F;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+}
+
+.product-card-new {
+  display: none;
+  position: absolute;
+  right: 27px;
+  top: 27px;
 }
 
 .catalog-button-background-wrapper {
