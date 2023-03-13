@@ -6,18 +6,21 @@
   <title>Интернет-магазин "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 <header class="page-header">
   <div class="page-header-container">
     <a class="header-logo" href="index.html">
-      <img src="images/header-logo.svg" width="145" height="36" alt="Логотип">
+      <img src="images/header-logo.svg" width="145" height="36" alt="Логотип.">
     </a>
     <nav class="navigation-top">
       <div class="navigation-top-left">
         <form class="navigation-search" method="get" action="https://echo.htmlacademy.ru/">
-          <input class="navigation-search-field" type="text" name="search" placeholder="Поиск по сайту">
+          <label class="visually-hidden" for="search-field">Поиск по сайту.</label>
+          <input class="navigation-search-field" type="text" id="search-field" name="search"
+                 placeholder="Поиск по сайту">
           <button class="navigation-search-submit" type="submit"><span>Найти</span></button>
         </form>
         <a class="navigation-account-login navigation-link" href="#">
@@ -90,30 +93,30 @@
         <button class="header-catalog-open-button">Каталог товаров</button>
         <div class="header-catalog-width-wrapper">
           <div class="header-catalog-grid-wrapper">
-          <ul class="header-catalog-items">
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="header-catalog-items">
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="header-catalog-items">
-            <li class="header-catalog-item">
-              <a class="header-catalog-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="header-catalog-items">
+              <li class="header-catalog-item">
+                <a class="header-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -145,7 +148,7 @@
             </svg>
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <img class="item-slide" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером">
+          <img class="item-slide" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
           <button class="item-slide-to-right item-slide-button">
             <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -182,7 +185,7 @@
             </svg>
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <img class="item-slide" src="images/slider-2.png" width="560" height="560" alt="Квадрокоптер с лазером">
+          <img class="item-slide" src="images/slider-2.png" width="560" height="560" alt="Фитнесс-браслет.">
           <button class="item-slide-to-right item-slide-button">
             <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -216,7 +219,7 @@
             </svg>
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <img class="item-slide" src="images/slider-3.png" width="560" height="560" alt="Квадрокоптер с лазером">
+          <img class="item-slide" src="images/slider-3.png" width="560" height="560" alt="Три селфи-палки.">
           <button class="item-slide-to-right item-slide-button">
             <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -255,12 +258,12 @@
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
+            <span class="visually-hidden">2 фото</span>
           </button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
+            <span class="visually-hidden">3 фото</span>
           </button>
         </li>
       </ol>
@@ -322,7 +325,9 @@
             <button class="button additional-services-button additional-services-nonactive-button" type="button">
               Гарантия
             </button>
-            <button class="button additional-services-button additional-services-nonactive-button additional-services-credit-button" type="button">
+            <button
+              class="button additional-services-button additional-services-nonactive-button additional-services-credit-button"
+              type="button">
               Кредит
             </button>
           </div>
@@ -377,7 +382,8 @@
         </span>
         <span class="item-under-the-order">Доставим редкий товар под заказ</span>
         <span class="info-logo">
-          <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="info-logo-image" width="2" height="12" viewBox="0 0 2 12" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_11468_3002)">
               <path d="M2 0H0V2H2V0Z"/>
               <path d="M2 4H0V12H2V4Z"/>
@@ -445,7 +451,8 @@
         </p>
       </div>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="newsletter-input-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+        <label class="visually-hidden" for="newsletter-email-input">Введите ваш E-mail.</label>
+        <input class="newsletter-input-field" id="newsletter-email-input" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
         <button class="newsletter-button" type="submit">
           Подписаться
         </button>
